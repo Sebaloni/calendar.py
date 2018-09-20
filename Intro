@@ -1,0 +1,10 @@
+#Hayden North
+#9-19-18
+#Calendar
+
+#Greeting
+print ("Hello, Welcome to this Calendar thing")
+
+#User Input
+year = int(input("Enter in the year you want"))
+month = str(input("Enter in the month of the year you want the calander from"))
