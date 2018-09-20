@@ -35,3 +35,19 @@ else:
 #Output
 if days > 0:
     print("The number of days is",days)
+if month in ("January","March","May","July","August","October","December"):
+           days = 31
+    
+    
+elif month in ("April,June,September,November"):
+           days = 30
+
+elif month==("February"):
+    if year%4==0:
+           days = 28
+
+    else:
+           days = 29
+else:
+    print("You dingus, You did not put a correct input in to recieve the number of days")
+    days = 0     
