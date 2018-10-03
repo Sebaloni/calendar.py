@@ -1,0 +1,89 @@
+#Hayden North
+#9-19-18
+#Calendar
+
+#Greeting
+print ("Hello, Welcome to this Calendar thing")
+
+#User Input
+year = int(input("Enter in the year you want"))
+month = str(input("Enter in the month of the year you want the calander from"))
+
+#Values
+century_digits = year//100
+year_digits = year - century_digits
+value = year_digits + year_digits//4
+day = 1
+#Calculation
+
+##year
+if (century_digits == 18 ):
+    value = value + 2
+elif (century_digits == 20):
+    value = value + 6
+
+#days in a month  
+if month in ("January","March","May","July","August","October","December"):
+           days = 31
+    
+    
+elif month in ("April,June,September,November"):
+           days = 30
+
+elif month==("February"):
+    if year%4==0:
+           days = 28
+
+    else:
+           days = 29
+ 
+    
+##day of week
+#Day loop
+day = 1
+for day in range(1,days + 1):
+    if month == "January" and year%4 != 0:
+        value = value + 1
+    elif month == "February" and year%4 != 0:
+        value = value + 4
+    elif month == "February" and year%4 == 0:
+        value = value + 3
+    elif month in ("March", "November"):
+        value = value + 4
+    elif month in ("April", "July"):
+        value = value + 0
+    elif month == "May":
+        value = value + 2
+    elif month == "June":
+        value = value + 5
+    elif month == "August":
+        value = value + 3
+    elif month == "October":
+        value = value + 1
+    elif month in ("September", "December"):
+        value = value + 6
+ 
+    #value
+    value = (value+day)%7
+
+    #new value
+    if value == 1:
+        day_of_week = "Sunday"
+    if value == 2:
+        day_of_week = "Monday"
+    if value == 3:
+        day_of_week = "Tuesday"
+    if value == 4:
+        day_of_week = "Wednesday"
+    if value == 5:
+        day_of_week = "Thursday"
+    if value == 6:
+        day_of_week = "Friday"
+    if value == 0:
+        day_of_week = "Saturday"
+    print (day_of_week)
+
+
+#else:
+    #print("You dingus, You did not put a correct input")
+    #days = 0
