@@ -1,0 +1,13 @@
+#Format of calander
+Month=input("Month that you want: ")
+year=input("Year that you want: ")
+print(format('-','-^24'))
+print('-' , format(Month," ^16"), format(year,' >6'), '-' , sep='') 
+print(format('-','-^24'))
+print('-', format('Sn',' ^4'), format('M', ' ^3'), format('T', ' ^3'), format('W',' ^3'), format('Th',' ^3'), format('F',' ^3'), format('Sa',' ^3'), '-' , sep='')
+print('-', format('',' ^4'), format('01', ' ^3'), format('02', ' ^3'), format('03',' ^3'), format('04',' ^3'), format('05',' ^3'), format('06',' ^3'), '-' , sep='')
+print('-', format('07',' ^4'), format('08', ' ^3'), format('09', ' ^3'), format('10',' ^3'), format('11',' ^3'), format('12',' ^3'), format('13',' ^3'), '-' , sep='')
+print('-', format('14',' ^4'), format('15', ' ^3'), format('16', ' ^3'), format('17',' ^3'), format('18',' ^3'), format('19',' ^3'), format('20',' ^3'), '-' , sep='')
+print('-', format('21',' ^4'), format('22', ' ^3'), format('23', ' ^3'), format('24',' ^3'), format('25',' ^3'), format('26',' ^3'), format('27',' ^3'), '-' , sep='')
+print('-', format('28',' ^4'), format('29', ' ^3'), format('30', ' ^3'), format('31',' ^3'), format('',' ^3'), format('',' ^3'), format('',' ^3'), '-' , sep='')
+print(format('-','-^24'))
